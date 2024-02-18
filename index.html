@@ -18,6 +18,17 @@
             text-align: center;
             padding: 10px 0;
         }
+        .navbar {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+        .navbar a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
         .container {
             max-width: 800px;
             margin: 20px auto;
@@ -41,25 +52,34 @@
             padding: 10px;
             border-radius: 5px;
         }
+        .gradient-text {
+            background: linear-gradient(to right, #ffcc00, #ff6666);
+            -webkit-background-clip: text;
+            color: transparent;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1 style="color: #fff;">Kokofixcomputers - Developer</h1>
+        <div class="gradient-text">Kokofixcomputers - Developer</div>
     </header>
-    <div class="container">
+    <div class="navbar">
+        <a href="#about">About</a>
+        <a href="#github">Github</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div class="container" id="about">
         <h2>About Me</h2>
-        <p>Welcome to my personal website. I am a developer who codes in his free time.</p>
-        
-        <h2>Skills</h2>
-        <ul>
-            <li style="background-color: #ffcc00;">HTML</li>
-            <li style="background-color: #ff6666;">CSS</li>
-            <li style="background-color: #66ccff;">JavaScript</li>
-            <li style="background-color: #99ff99;">Python</li>
-            <!-- Add your skills here with different colors -->
-        </ul>
-        
+        <p>Welcome to my personal website. I am a developer passionate about creating innovative solutions.</p>
+    </div>
+    <div class="container" id="github">
+        <h2>Github</h2>
+        <p>Visit my GitHub profile to see my projects and contributions.</p>
+    </div>
+    <div class="container" id="contact">
         <h2>Contact Me</h2>
         <p>Email: kokofixcomputers@example.com</p>
         <p>Phone: +1234567890</p>
