@@ -57,46 +57,105 @@
         .javascript { background-color: #66ccff; }
         .python { background-color: #99ff99; }
         .swift { background-color: #ff99cc; }
+        .black { background-color: #000000; }
+        .dblue { background-color: #1B60FF; }
         .gradient-text {
-            background: linear-gradient(to right, #ffcc00, #ff6666);
+            background: rgb(92,0,0);
+            background: linear-gradient(90deg, rgba(92,0,0,1) 0%, rgba(231,17,17,1) 35%, rgba(0,200,255,1) 100%);
             -webkit-background-clip: text;
             color: transparent;
             font-size: 24px;
             font-weight: bold;
             text-align: center;
         }
+        .white-text {
+          color: white !important;
+          text-decoration: none !important;
+          text-decoration-color: white !important; /* This will set the underline color to white */
+        }
+        a.white-text:hover {
+          text-decoration: underline;
+        }
+        .skills-list .percent {
+        color: #555;
+        }
+        .top-bar {
+          color: #fff;
+          background-color: #333;
+          color: #fff;
+          margin: 0 10px;
+          text-decoration: none;
+          text-align: center;
+          padding: 10px 0;
+          border-radius: 10px; /* Adjust the value as per your preference */
+        }
+         .top-bar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .skills-list li {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px;
+        }
+        .skills-list {
+          list-style-type: none;
+          padding: 0;
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="gradient-text">Kokofixcomputers - Developer</div>
+        <center><img src="/kokofixcomputers.png" alt="Kokofixcomputers Logo" height="50"></center>
     </header>
-    <div class="navbar">
+  <br>
+  <br>
+    <div class="top-bar">
         <a href="#about">About</a>
-        <a href="#github">Github</a>
-        <a href="#contact">Contact</a>
+        <a href="#whereimon">Contact</a>
+        <a href="#skills">Skills</a>
     </div>
     <div class="container" id="about">
         <h2>About Me</h2>
-        <p>Welcome to my personal website. I am a developer passionate about creating innovative solutions.</p>
+        <p>Welcome to my personal website. I am a developer who codes in his free time!</p>
     </div>
-    <div class="container" id="github">
-        <h2>Github</h2>
-        <p>Visit my GitHub profile to see my projects and contributions.</p>
-    </div>
-    <div class="container" id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: kokofixcomputers@example.com</p>
+      <div class="container" id="whereimon">
+        <h2>I'm On/Contact</h2>
+        <ul>
+          <a href="https://scratch.mit.edu/users/kokofixcomputers"><li class="html white-text">Scratch</li></a>
+          <a href="https://github.com/kokofixcomputers"><li class="black white-text">Github</li></a>
+          <a href="mailto:kokofixcomputers@kokocanfixit.serv00.net"><li class="css white-text">Email: kokocanfixit@kokofixcomputers.serv00.net</li></a>
+          <a href="#"><li class="dblue white-text">Discord: kokofixcomputers (server comming soon)</li></a>
+        </ul>
     </div>
     <div class="container" id="skills">
         <h2>Skills</h2>
-        <ul>
-            <li class="html">HTML</li>
-            <li class="css">CSS</li>
-            <li class="javascript">JavaScript</li>
-            <li class="python">Python</li>
-            <li class="swift">Swift</li>
-        </ul>
+        <p>Here are what languages i know and how much i know.</p>
+  <ul class="skills-list">
+    <li class="html">
+        <span>HTML</span>
+        <span class="percent">30.3% Learned</span>
+    </li>
+    <li class="css">
+        <span>CSS</span>
+        <span class="percent">5.1% Learned</span>
+    </li>
+    <li class="javascript">
+        <span>JavaScript</span>
+        <span class="percent">2.6% Learned</span>
+    </li>
+    <li class="python">
+        <span>Python</span>
+        <span class="percent">57% Learned</span>
+    </li>
+    <li class="swift">
+        <span>Swift</span>
+        <span class="percent">0.3% Learned</span>
+    </li>
+</ul>
     </div>
 </body>
 </html>
