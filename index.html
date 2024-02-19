@@ -140,6 +140,24 @@
           <a href="https://discord.gg/b2N6rSh2Ta"><li class="dblue white-text">Discord: kokofixcomputers</li></a>
         </ul>
     </div>
+    <div class="container" id="wiwo">
+        <h2>What i'm working on</h2>
+        <p id="wiwop"></p>
+        <script>
+            const paragraph = document.getElementById('wiwop');
+
+            // Fetch the content from the URL
+            fetch('/wiwo.txt')
+              .then(response => response.text())
+              .then(data => {
+                // Replace the content of the <p> element with the fetched data
+                paragraph.innerHTML = data;
+              })
+              .catch(error => {
+                console.error('Error fetching content:', error);
+              });
+        </script>
+    </div>
     <div class="container" id="skills">
         <h2>Skills</h2>
         <p>Here are what languages i know and how much i know.</p>
